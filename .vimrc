@@ -1,56 +1,92 @@
-" on commands
 syntax on
 filetype on
+filetype plugin indent on
 
-" set commands
-set ruler
-set number
-set mouse=a
-set cursorline
-"set cursorcolumn
-set shiftwidth=4
-set tabstop=4
-set expandtab
-set nobackup
-set scrolloff=10
-set nowrap
-set incsearch
+set number              " show line numbers
+set wrap                " wrap lines
+set encoding=utf-8      " set encoding to UTF-8 (default was "latin1")
+set fileencoding=utf-8
+set fileencodings utf-8
+set ttyfast
+set mouse=a             " enable mouse support (might not work well on Mac OS X)
+set wildmenu            " visual autocomplete for command menu
+set lazyredraw          " redraw screen only when we need to
+set showmatch           " highlight matching parentheses / brackets [{()}]
+set laststatus=2        " always show statusline (even with only single window)
+set ruler               " show line and column number of the cursor on right side of statusline
+set visualbell          " blink cursor on error, instead of beeping
+
+
+set tabstop=4           " width that a <TAB> character displays as
+set expandtab           " convert <TAB> key-presses to spaces
+set shiftwidth=4        " number of spaces to use for each step of (auto)indent
+set softtabstop=4       " backspace after pressing <TAB> will remove up to this many spaces
+set autoindent          " copy indent from current line when starting a new line
+set smartindent         " even better autoindent (e.g. add indent after '{')
+
+
+set incsearch           " search as characters are entered
+set hlsearch            " highlight matches
 set ignorecase
-set smartcase
+
+set autoread            " autoreload the file in Vim if it has been changed outside of Vim
+
+set nocompatible
+set cursorline
+" set cursorcolumn
 set showcmd
 set showmode
-set showmatch
-set hlsearch
 set history=1000
-set wildmenu " completion
-set wildmode=list:longest
-set statusline= 
+set wildmenu " Enable auto completion menu after pressing TAB.
+set wildmode=list:longest " Make wildmenu behave like similar to Bash completion.
+set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
+
+" Clear status line when vimrc is reloaded.
+set statusline=
 set statusline+=\ %F\ %M\ %Y\ %R
 set statusline+=%=
-set statusline+=\ Ascii:\ %b\ Hex:\ 0x%B\ Row:\ %l\ Col:\ %c\ Percent:\ %p%%
+set statusline+=\ ascii:\ %b\ hex:\ 0x%B\ row:\ %l\ col:\ %c\ percent:\ %p%%
 set laststatus=2
-set encoding=utf-8
-set fileencoding=utf-8
-set fileencodings=utf-8
-set ttyfast
 
+set splitbelow
+set splitright
+set clipboard=unnamed
+
+
+
+
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+let g:ycm_autoclose_preview_window_after_completion=1
+map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+let python_highlight_all=1
+
+
+
+" Plugins using plug "
+"
+"
 call plug#begin('~/.vim/plugged')
 
   Plug 'dense-analysis/ale'
-  Plug 'preservim/nerdtree'
-  Plug 'github/copilot.vim'
+  Plug 'jistr/vim-nerdtree-tabs'
+  Plug 'tmhedberg/SimpylFold'
+  Plug 'vim-scripts/indentpython.vim'
+  Plug 'Valloric/YouCompleteMe'
+  Plug 'vim-syntastic/syntastic'
+  Plug 'nvie/vim-flake8'
+  Plug 'kien/ctrlp.vim' " Want to search for basically anything from VIM?
+  Plug 'tpope/vim-fugitive' "Want to perform basic git commands without leaving VIM?
+  Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 
 call plug#end()
 
-
-cnoreabbrev W! w!
-cnoreabbrev Q! q!
-cnoreabbrev Qall! qall!
-cnoreabbrev Wq wq
-cnoreabbrev Wa wa
-cnoreabbrev wQ wq
-cnoreabbrev WQ wq
-cnoreabbrev W w
-cnoreabbrev Q q
-cnoreabbrev Qall qall
+"python with virtualenv support
+py << EOF
+import os
+import sys
+if 'VIRTUAL_ENV' in os.environ:
+  project_base_dir = os.environ['VIRTUAL_ENV']
+  activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+  execfile(activate_this, dict(__file__=activate_this))
+EOF
