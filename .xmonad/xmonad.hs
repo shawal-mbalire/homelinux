@@ -21,7 +21,7 @@ myClickJustFocuses = False
 
 -- Width of the window border in pixels.
 --
-myBorderWidth   = 1
+myBorderWidth   = 2
 
 -- modMask lets you specify which modkey you want to use. The default
 -- is mod1Mask ("left alt").  You may also consider using mod3Mask
@@ -44,7 +44,7 @@ myWorkspaces    = ["1","2","3","4","5","6","7","8","9"]
 -- Border colors for unfocused and focused windows, respectively.
 --
 myNormalBorderColor  = "#dddddd"
-myFocusedBorderColor = "#00ffff"
+myFocusedBorderColor = "#00ff00"
 
 ------------------------------------------------------------------------
 -- Key bindings. Add, modify or remove key bindings here.
@@ -59,6 +59,13 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
     -- launch gmrun
     , ((modm .|. shiftMask, xK_p     ), spawn "chromium")
+
+    -- launch code_insiders
+    , ((modm .|. shiftMask, xK_i     ), spawn "code-insiders")
+
+
+    -- launch Thunar
+    , ((modm .|. shiftMask, xK_t     ), spawn "thunar")
 
     -- close focused window
     , ((modm .|. shiftMask, xK_c     ), kill)
