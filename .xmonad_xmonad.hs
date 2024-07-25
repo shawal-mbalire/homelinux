@@ -58,7 +58,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm,               xK_p     ), spawn "dmenu_run")
 
     -- launch gmrun
-    , ((modm .|. shiftMask, xK_p     ), spawn "google-chrome")
+    , ((modm .|. shiftMask, xK_p     ), spawn "google-chrome-stable")
 
     -- launch code_insiders
     , ((modm .|. shiftMask, xK_i     ), spawn "code-insiders")
