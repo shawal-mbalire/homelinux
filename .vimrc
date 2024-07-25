@@ -55,7 +55,7 @@ set clipboard=unnamed
 
 
 
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+
 let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 let python_highlight_all=1
@@ -71,12 +71,13 @@ call plug#begin('~/.vim/plugged')
   Plug 'jistr/vim-nerdtree-tabs'
   Plug 'tmhedberg/SimpylFold'
   Plug 'vim-scripts/indentpython.vim'
-  Plug 'Valloric/YouCompleteMe'
+" Plug 'Valloric/YouCompleteMe'
   Plug 'vim-syntastic/syntastic'
   Plug 'nvie/vim-flake8'
   Plug 'kien/ctrlp.vim' " Want to search for basically anything from VIM?
   Plug 'tpope/vim-fugitive' "Want to perform basic git commands without leaving VIM?
   Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+  Plug 'theRealCarneiro/hyprland-vim-syntax'
 
 
 call plug#end()
