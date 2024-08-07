@@ -16,9 +16,13 @@ telegram code-i
 sudo dnf install vlc steam neofetch google-chrome-stable 
 ```
 ```bash
-sudo dnf remove gnome-boxes gnome-calendar gnome-connections gnome-maps gnome-tour gnome-weather
+sudo dnf remove gnome-boxes gnome-calendar gnome-connections gnome-maps gnome-tour gnome-weather firefox
 ```
 
 ```bash
 sudo dnf group install
+```
+
+```bash
+sudo dnf autoremove
 ```
