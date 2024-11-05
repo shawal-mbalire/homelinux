@@ -10,7 +10,7 @@ yay -Syyu hyprland-git
 yay -Syyu wofi drun
 ```
 
-# Fedora Packages
+## Fedora Packages
 telegram code-i
 ```bash
 sudo dnf install vlc steam neofetch google-chrome-stable 
@@ -25,4 +25,9 @@ sudo dnf group install
 
 ```bash
 sudo dnf autoremove
+```
+
+## Vim plug 
+
+```curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
