@@ -9,7 +9,7 @@ obsidian_vault
 !.config/nvim
 !.config/obsidian
 !.xmonad
-!.vim
+!.vim/*
 !.alacritty.toml
 !.bashrc
 !.vimrc
