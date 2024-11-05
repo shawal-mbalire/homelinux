@@ -15,3 +15,6 @@ obsidian_vault
 !.vimrc
 !README.md
 !.gitignore
+!.gitconfig
+!.gitattributes
+!root_etc_xdg_picom.conf
