@@ -72,14 +72,14 @@ call plug#begin('~/.vim/plugged')
   Plug 'jistr/vim-nerdtree-tabs'
   Plug 'tmhedberg/SimpylFold'
   Plug 'vim-scripts/indentpython.vim'
-  Plug 'Valloric/YouCompleteMe'
+  " Plug 'Valloric/YouCompleteMe'
   Plug 'vim-syntastic/syntastic'
   Plug 'nvie/vim-flake8'
   Plug 'kien/ctrlp.vim' " Want to search for basically anything from VIM?
   Plug 'tpope/vim-fugitive' "Want to perform basic git commands without leaving VIM?
   Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
   Plug 'theRealCarneiro/hyprland-vim-syntax'
-  Plug 'ThePrimeagen/vim-be-good'
+  " Plug 'ThePrimeagen/vim-be-good'
 
 
 call plug#end()
