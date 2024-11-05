@@ -34,7 +34,7 @@ set autoread            " autoreload the file in Vim if it has been changed outs
 
 set nocompatible
 set cursorline
-" set cursorcolumn
+set cursorcolumn
 set showcmd
 set showmode
 set history=1000
