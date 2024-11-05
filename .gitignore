@@ -1,6 +1,7 @@
 *
 yay
 obsidian_vault
+
 !.config/fish
 !.config/hypr
 !.config/fastfetch
@@ -8,6 +9,7 @@ obsidian_vault
 !.config/kitty
 !.config/nvim
 !.config/obsidian
+
 !.xmonad
 !.vim/*
 !.alacritty.toml
