@@ -11,7 +11,7 @@ obsidian_vault
 !.config/obsidian
 
 !.xmonad
-!.vim/*
+!.vim
 !.alacritty.toml
 !.bashrc
 !.vimrc
