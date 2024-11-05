@@ -2,11 +2,18 @@
 yay
 obsidian_vault
 
+!.config
+.config/*
 !.config/fish
+!.config/fish/config.fish
 !.config/hypr
 !.config/fastfetch
+!.config/fastfetch/config.jsonc
 !.config/gh
+!.config/gh/config.yml
+!.config/gh/hosts.yml
 !.config/kitty
+!.config/kitty/kitty.conf
 !.config/nvim
 !.config/obsidian
 
