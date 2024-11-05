@@ -3,7 +3,6 @@ yay
 obsidian_vault
 
 !.config
-.config/*
 !.config/fish
 !.config/fish/config.fish
 !.config/hypr
@@ -15,7 +14,12 @@ obsidian_vault
 !.config/kitty
 !.config/kitty/kitty.conf
 !.config/nvim
+!.config/nvim/*.lua
+!.config/nvim/after/plugin/*.lua
+!.config/nvim/lua/shawal/*.lua
+!.config/nvim/plugin/*.lua
 !.config/obsidian
+.config/*
 
 !.xmonad
 !.vim
