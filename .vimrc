@@ -3,6 +3,7 @@ filetype on
 filetype plugin indent on
 
 set number              " show line numbers
+set relativenumber
 set wrap                " wrap lines
 set encoding=utf-8      " set encoding to UTF-8 (default was "latin1")
 set fileencoding=utf-8
