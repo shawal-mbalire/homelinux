@@ -3,39 +3,61 @@ yay
 obsidian_vault
 
 !.config
+
+# FISH
 !.config/fish
 !.config/fish/config.fish
+
+# HYPRLAND
 !.config/hypr
 !.config/hypr/hyprland.conf
 !.config/hypr/hyprpaper.conf
-!.config/fastfetch
-!.config/hypr
+
+# FASTFETCH
 !.config/fastfetch
 !.config/fastfetch/config.jsonc
+
+# GITHUB CLI TOOL
 !.config/gh
 !.config/gh/config.yml
 !.config/gh/hosts.yml
+
+# KITTY
 !.config/kitty
 !.config/kitty/kitty.conf
+
+# NEOVIM
 !.config/nvim
+!.config/nvim/lua
+!.config/nvim/after
 !.config/nvim/*.lua
+!.config/nvim/plugin
+!.config/nvim/after/plugin
+!.config/nvim/lua/shawal
+!.config/nvim/lua/shawal/lazy
 !.config/nvim/after/plugin/*.lua
 !.config/nvim/lua/shawal/*.lua
+!.config/nvim/lua/shawal/lazy/*.lua
 !.config/nvim/plugin/*.lua
+
 !.config/obsidian
 .config/*
 
+# XMONAD
 !.xmonad
 !.xmonad/xmonad.hs
-!.vim
+
+# OTHER FILES
+!.vimrc
+!.bashrc
 !.xinitrc
 !.xprofile
 !.xsession
 !.alacritty.toml
-!.bashrc
-!.vimrc
+!root_etc_xdg_picom.conf
+
+# VERSION CONTROL
 !README.md
 !.gitignore
 !.gitconfig
 !.gitattributes
-!root_etc_xdg_picom.conf
