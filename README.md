@@ -10,23 +10,11 @@ yay -Syyu hyprland-git
 yay -Syyu wofi drun
 ```
 
-## Fedora Packages
-telegram code-i
+## Nvim packer
 ```bash
-sudo dnf install vlc steam neofetch google-chrome-stable 
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
-```bash
-sudo dnf remove gnome-boxes gnome-calendar gnome-connections gnome-maps gnome-tour gnome-weather firefox
-```
-
-```bash
-sudo dnf group install
-```
-
-```bash
-sudo dnf autoremove
-```
-
 ## Vim plug 
 
 ### vim
