@@ -6,6 +6,10 @@ obsidian_vault
 !.config/fish
 !.config/fish/config.fish
 !.config/hypr
+!.config/hypr/hyprland.conf
+!.config/hypr/hyprpaper.conf
+!.config/fastfetch
+!.config/hypr
 !.config/fastfetch
 !.config/fastfetch/config.jsonc
 !.config/gh
@@ -22,7 +26,11 @@ obsidian_vault
 .config/*
 
 !.xmonad
+!.xmonad/xmonad.hs
 !.vim
+!.xinitrc
+!.xprofile
+!.xsession
 !.alacritty.toml
 !.bashrc
 !.vimrc
