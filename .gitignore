@@ -62,3 +62,5 @@ obsidian_vault
 !.gitignore
 !.gitconfig
 !.gitattributes
+
+DockerContainer/
